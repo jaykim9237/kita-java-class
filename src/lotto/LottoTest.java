@@ -1,5 +1,7 @@
 package lotto;
 
+import java.util.HashSet;
+
 public class LottoTest {
 	/*
 	 * 1.메인메뉴 출력(종료메뉴를 선택할 때 까지 반복 수행한다.)
@@ -20,6 +22,9 @@ public class LottoTest {
 	 * */
 	public static void main(String[] args) {
 		
+		LottoManager lm  = new LottoManager();
+		HashSet<Integer> result = new HashSet<Integer>();
+		result = lm.makeLottoNumber();
 	}
 
 }
