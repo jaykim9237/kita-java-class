@@ -27,14 +27,14 @@ public class BankManager {
 	 * 만략, 파일이 없으면 새로운 어카운트리스트를 생성한다.
 	 * 
 	 * 그럼 데이터가 있는지 없는지 어떻게 알겠는가 우리가 파일 객체를 알아야해*/
-	public BankManager() {
-		File file = new File("data.dt");
-		if(file.exists()) {//그거 많이 읽어봐야겠다.
-			readData();//여기서 리드를 사용하는 것이고 그럼 저장은 오디에 해줘야 하는 것일까
-		} else {
-			accountList = new ArrayList<Account>();
-		}
-	}
+//	public BankManager() {
+//		File file = new File("data.dt");
+//		if(file.exists()) {//그거 많이 읽어봐야겠다.
+//			readData();//여기서 리드를 사용하는 것이고 그럼 저장은 오디에 해줘야 하는 것일까
+//		} else {
+//			accountList = new ArrayList<Account>();
+//		}
+//	}
 	
 	//1. 계좌등록
 	public void createAccount(Account a) {
